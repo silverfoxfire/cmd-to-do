@@ -6,6 +6,19 @@
     <RootNamespace>Todo_List</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+	  <PackAsTool>true</PackAsTool>
+	  <ToolCommandName>todo</ToolCommandName>
+	  <PackageOutputPath>$(MSBuildProjectDirectory)\nupkg</PackageOutputPath>
+
+	  <PackageId>oreofox-todo</PackageId>
+	  <Version>1.0.1</Version>
+	  <Authors>OreoFox</Authors>
+	  <Description>A simple context level todo list system</Description>
+	  <AssemblyName>$(MSBuildProjectName)</AssemblyName>
   </PropertyGroup>
 
+	<ItemGroup>
+		<None Include="dotnet-todo.runtimeconfig.template.json" Pack="true" PackagePath="" />
+	</ItemGroup>
 </Project>

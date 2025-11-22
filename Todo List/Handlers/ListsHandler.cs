@@ -23,7 +23,7 @@
             var activeList = _listManager.GetActiveList();
             foreach (string list in lists)
             {
-                if (list == activeList) Console.WriteLine($"* {list} (active)");
+                if (list.ToLower() == activeList.ToLower()) Console.WriteLine($"* {list} (active)");
 
                 else Console.WriteLine($"  {list}");
             }
